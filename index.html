@@ -1,0 +1,191 @@
+
+
+<!doctype html>
+<html lang="eng">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>The Hive</title>
+      <link rel="stylesheet" href="hivestyles.css"/>
+      <link rel="shortcut icon" href="img/hiveLogo.png"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500i,700i,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <script
+			  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+			  crossorigin="anonymous"></script>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/menuGenerator.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+   </head>
+
+   <body>
+    <header class="flexColumn">
+
+      <div class="logo flexRow">
+        <img src="img/hiveLogo.png" alt="The Hive Eatery, Est. 2018, Victoria BC, Eat Good Food">
+      </div>
+
+      <nav class="flexRow fixedElement">
+
+        <a class="icon" data-href="#menu">
+          <i class="fas fa-hamburger"></i>
+        </a>
+
+        <a class="icon" data-href="#about">
+          <i class="far fa-question-circle"></i>
+        </a>
+
+        <a class="icon" data-href="#hours">
+          <i class="fas fa-clock"></i>
+        </a>
+
+        <a class="icon" data-href="#location">
+          <i  class="fas fa-map-marker-alt"></i>
+        </a>
+
+        <a class="icon" data-href="#contact">
+          <i class="fas fa-phone "></i>
+        </a>
+
+      </nav>
+
+    </header>
+
+    <div class="hiveInfo flexColumn " id="about">
+
+      <div class="hiveInfoBody flexColumn">
+        <div class="flexColumn">
+          <p> Our burgers are served on a toasted challah bun, freshly baked by our friends at The Cottage Bakery. Whenever possible, we source our ingredients from local farmers like Berryman Brothers, Sun Wing Farms, Dan's Farms, and Island Farmhouse Poultry. Chef Jason designs and handcrafts all our patties, sauces, chutneys, aiolis, and marinades. At The Hive, our motto is simple:</p>
+          <em>	Eat Good Food!</em>
+        </div>
+        <img src="img/hiveExterior.jpg" alt="" />
+      </div>
+
+    </div>
+
+
+    <div class="hiveInfoWrapper">
+      <div class="hiveInfo flexRow" id="hours">
+          <div class="hiveInfoHeader flexRow">
+            <h1> Hours</h1>
+          </div>
+          <div class="hiveInfoBody flexColumn">
+            <p> Tuesday - Saturday
+            <br> 11:30 - 8:00 </p>
+          </div>
+      </div>
+
+        <div class="hiveInfo flexRow" id="location">
+          <div class="hiveInfoHeader flexRow">
+             <h1> Location </h1>
+          </div>
+          <div class="hiveInfoBody flexColumn">
+            <a href="https://goo.gl/maps/UJYpoV14RVEk8SYR6"> <p>1275 Fairfield Rd, Victoria, BC V8V 3B3</p></a>
+          </div>
+        </div>
+
+      <div class="hiveInfo flexRow" id="contact">
+            <div class="hiveInfoHeader flexRow">
+              <h1> Contact</h1>
+            </div>
+            <div class="hiveInfoBody flexColumn">
+              <div class="hiveContact">
+                <div class="flexRow">
+                  <a class="icon" href="tel:7784324483">
+                    <i class="fas fa-phone "></i>
+                  </a>
+                  <p> 778 - 432 - 4483 </p>
+                </div>
+                <div class="flexRow">
+                  <a class="icon" href="https://instagram.com/thehive.eatery?utm_source=ig_profile_share&igshid=132iq5bu8qdtfm" target="_blank" rel="noopener">
+                    <i class="fab fa-instagram "></i>
+                  </a>
+                  <p> Instagram </p>
+                </div>
+
+                <div class="flexRow">
+                  <a class="icon" href="https://www.facebook.com/thehiveeatery/" target="_blank" rel="noopener">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <p> Facebook </p>
+              </div>
+          </div>
+        </div>
+        </div>
+</div>
+      <div id="menu" class="hiveInfo flexColumn">
+        <h1 class="flexRow">
+          Menu
+        </h1>
+
+<!--
+        <div class="category">
+          <div class="flexRow">
+            <h1> Burgers</h1>
+          </div>
+
+          <div class="item flexColumn">
+            <div class="itemHeader flexRow">
+              <h1> Name will go here </h1>
+              <h1>$PR</h1>
+            </div>
+            <div class="itemBody flexRow">
+              <img src="img/halibut.jpg" alt="" />
+              <p>Description will go here</p>
+            </div>
+          </div>
+-->
+    </div>
+
+
+
+
+      <footer class=" flexRow">
+          <img src="img/hiveLogo.png" alt="The Hive Eatery, Est. 2018, Victoria BC, Eat Good Food">
+      </footer>
+   </body>
+</html>
+<script>
+
+
+$(document).ready(function(e) {
+  menuGenerator(hiveMenu);
+
+  $("nav .icon i").on('click', function(event){
+    var offset = $('nav').height();
+    var travelToElement = $(event.target).parent().attr('data-href');
+    var yPos = $(travelToElement).position().top;
+    var pos = yPos - offset - 50;
+    scrollWindow(pos);
+  });
+  function scrollWindow(ypos) {
+    window.scroll({
+      top: ypos,
+      left: 0,
+      behaviour: 'smooth'});
+    }
+
+  $(window).scroll(function(e){
+    var $win = $(this);
+    var $el = $('.fixedElement');
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    if ($win.scrollTop() > $(".logo").height() && !isPositionFixed){
+      $el.css({'position': 'fixed', 'top': '0px'});
+    }
+    if ($win.scrollTop() < $(".logo").height() && isPositionFixed){
+      $el.css({'position': 'static', 'top': '0px'});
+    }
+
+  });
+
+
+
+});
+</script>

@@ -1,0 +1,175 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+#mapid {
+  height: 200px;
+  width: 200px;
+}
+.flexRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  width: 100%;
+  height: auto;
+}
+.logo{
+  height: 300px;
+  width: 100%;
+
+  background-image:url('img/honeycomb_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  justify-content: center;
+}
+
+.logo img{
+  margin: 2%;
+  padding: 1%;
+  max-height: 90%;
+}
+nav{
+  width: 100%;
+  height: 50px;
+
+  justify-content: space-around;
+}
+.fixedElement{
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: all ease-in .5s;
+  background-color: #ffffffad;
+}
+nav a {
+  text-decoration: none !important;
+}
+.icon{
+  color: #578a92;
+  margin: 5px;
+  padding: 2.5px;
+  transition: all ease-in .5s;
+  font-size: 1.5em;
+}
+.hiveInfoWrapper{
+  background-image:url('img/honeycomb_background2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #85d6d3;
+      width: 90%;
+}
+/* INFO ELEMENTS */
+.hiveInfo{
+  width: 100%;
+  justify-content: flex-start;
+}
+.hiveInfo .hiveInfoHeader,.hiveInfo .hiveInfoBody{
+  padding: 0% 5% 0% 5%;
+}
+.hiveInfoHeader  {
+  justify-content: flex-start;
+  width: 30%;
+}
+.hiveInfoBody {
+ width: 67%;
+ justify-content: center;
+}
+.hiveInfoHeader h1{
+  color:  #213130;
+  font-size: 1.5em;
+}
+.hiveInfoBody em, .hiveInfoBody a p, .itemBody a{
+  color: #578a92 !important;
+  font-weight: 600 !important;
+  text-decoration:  none;
+}
+.hiveInfoBody a{
+  text-decoration: none !important;
+}
+.hiveInfoBody em {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.hiveInfoBody p{
+  text-align: center;
+}
+
+.hiveInfoBody img{
+  max-width: 250px;
+  margin: 2%;
+  padding: 2%;
+}
+
+#about .hiveInfoBody{
+  text-align: left;
+  width:90%;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.categoryHeader h1 {
+  color: #5d5d5d;
+  font-size: 1.5em;
+  font-weight:600;
+}
+.categoryHeader{
+  width: 100%;
+  justify-content: center;
+}
+
+.category .item {
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+}
+.itemHeader, .itemBody{
+  width: 100%;
+  justify-content: space-between;
+}
+.itemHeader h1{
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #888787;
+}
+.itemBody p{
+  font-size: 1.2em;
+  font-weight: 300;
+  color: black;
+  line-height: 1.8em;
+}
+.itemBody img{
+  width: 40%;
+}
+
+footer{
+  width:100%;
+  height: 100px;
+  justify-content: center;
+  background-image:url('img/honeycomb_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer img{
+      max-height: 90%;
+}
